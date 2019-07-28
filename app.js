@@ -28,6 +28,16 @@ app.use(middleware.tokenExtractor)
 app.use("/api/blogs", blogsRouter)
 app.use("/api/users", usersRouter)
 app.use("/api/login", loginRouter)
+//This route will redirect all non-valid paths to index.html
+//This type of catch-all method was necessary, as the app broke quite badly
+//after pushed into production, despite no problems with the dev build
+app.get("/*", (request, response) => {
+	response.sendFile(path.join(__dirname, "./build/index.html"), (error) => {
+		if (error) {
+			return response.status(500).json({error})
+		}
+	})
+})
 
 if (process.env.NODE_ENV === "test") {
 	const testingRouter = require("./controllers/tests")
