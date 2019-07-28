@@ -1,0 +1,55 @@
+
+# post http://localhost:3003/api/blogs
+# Content-Type: application/json
+
+# {
+#     "title": "sadadsaa",
+#     "author": "123131sdasd",
+#     "likes": "12312"
+# }
+
+
+# delete http://localhost:3003/api/blogs/5d29b675f4be3936485e0dd5
+
+# put http://localhost:3003/api/blogs/5d2db776366061473404cd50
+# Content-Type: application/json
+
+# {
+#     "title": "kaljaa on monenlaista",
+#     "author": "kaljamies",
+#     "url": "www.kalja.fi",
+#     "likes": 23783736321624,
+#     "comments": ["kalja!"]
+# }
+
+post http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "sadg",
+    "name": "sadga",
+    "password": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+}
+
+# post http://localhost:3003/api/blogs
+# Content-Type: application/json
+# Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpcmxld2FuZ2VyIiwiaWQiOiI1ZDJjNzEyNjQ4MjBjZTQxNDhhYmIwNTgiLCJpYXQiOjE1NjMxOTM2NzJ9.3BkhmLnWKgffIf6ysPAm9EphZOU-IBvm3jqjbg_il-c
+
+# {
+#     "title": "asdsada",
+#     "author": "ghjg",
+#     "url": "www.ohdog.fi",
+#     "likes": 1.213231,
+#     "userId": "5d2c71264820ce4148abb058"
+# }
+
+# post http://localhost:3003/api/login
+# Content-Type: application/json
+
+# {
+#     "username": "benis",
+#     "password": "fug"
+# }
+
+# delete http://localhost:3003/api/blogs/5d2c708e4820ce4148abb056
+# Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRpcmxld2FuZ2VyIiwiaWQiOiI1ZDJjNzEyNjQ4MjBjZTQxNDhhYmIwNTgiLCJpYXQiOjE1NjMxOTM2NzJ9.3BkhmLnWKgffIf6ysPAm9EphZOU-IBvm3jqjbg_il-c
